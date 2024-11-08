@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Westcoast Group of Companies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+    
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#news">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+</section>
+    
+
+<!-- About Us -->   
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We are Westcoast Group of Companies</h1>
+            <br>
+            <p>Dedicated to advancing Liberia’s telecommunications, energy, and agriculture sectors. With a strong commitment to innovation
+            and sustainability, we provide solutions that empower local communities and drive economic progress growth.</p>
+            <br>
+            <br>
+            <h1>Our Mission</h2>
+            <p>To lead innovation in Liberia's telecoms, energy, and agricultural sectors while prioritizing sustainability.</p>
+            <br>
+            <br>
+            <h1>Our Vision</h2>
+            <p>To be the foremost provider of integrated solutions that empower communities and enhance quality of life.</p>
+            <br>
+            <br>
+            <h1>Company History</h1>
+            <p>2010: Founded to enhance Liberia's telecommunications infrastructure.
+               2015: Expanded services to renewable energy solutions.
+               2020: Introduced sustainable agricultural practices.</p>
+               <br>
+               <br>
+               <a href="#services" class="cta blue-btn">LEARN MORE</a>
+        </div>
+        <div class="about-col">
+            <img src="img/IMG-20241023-WA0002.jpg">
+        </div>
+    </div>
+</section>
+
+
+<!---- footer ----> 
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>copyright©2024WestcoastGroupofCompanies.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagran"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!------ JavaScript for toggle <menu-------->
+
+<script>
+
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+          
+          
+          
+
+    
+
+    
+</body>
+</html>

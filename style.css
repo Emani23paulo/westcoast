@@ -1,0 +1,805 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: popping, sans-serif, arial;
+}
+    
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/banner7.JPG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 150px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f4f1f0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+
+.cta {
+    display: inline-block;
+    background: transparent;
+    padding: 12px 34px;
+    margin: 10px;
+    color: #cdcdef;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #a9a0e8;
+    font-size: 13px;
+}
+.cta:hover {
+    border: 1px solid #1e25ed;
+    background: #1e25ed;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width:700px) {
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        background: #0f3f97;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #ffffff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+    nav img {
+        width: 100px;
+    }
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+}
+
+/*-----about----*/
+
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about p {
+    color: #1d1b1b;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    line-height: 1.6;
+    
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.abt-col {
+    flex-basis: 31%;
+    background: #f2f79c;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.abt-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.abt-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+/*-----Service----*/
+
+.service {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.service h1 {
+    color:  #101014;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ser-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ser-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(13, 4, 116, 0.2);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #f1eaea;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    line-height: 1.6;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+}
+}
+
+
+/*-- clients/partners ---*/
+
+.clients {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.clients h1 {
+    color:  #101014;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.clients-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.clients-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+    
+.clients-col p {
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.clients-col h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.clients-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+ }
+
+
+/*-- testimonials ---*/
+
+.testimonials {
+    width: 80%;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.testimonial-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #e8f8bd;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p {
+    padding: 0;
+    line-height: 1.6;
+}
+
+.testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col fa {
+    color: #d1d11c;
+}
+
+
+
+.testimonial-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 700px) {
+    .testimonial-col img {
+        height: 50px;
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+
+/*-- call-to-action ---*/
+
+.cta1 {
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/services-bg.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0px;
+}
+    
+.cta1 h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px) {
+    .cta1 {
+        font-size: 24px;
+    }
+}
+ 
+
+
+/*-- footer ---*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer h3 {
+    color: #242425;
+}
+
+
+.icons .fa {
+    color: #291963;
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+@media(max-width: 700px) {
+    .footer p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*-----About Us Page----*/
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(3, 69, 18, 0), rgba(141, 141, 4, 0)), url(img/agri-telecom0.JPG);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 80px;
+}
+
+.about-us {
+    width: 85%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 80%;
+}
+
+.about-col h1 {
+    padding-top: 0;
+    color: rgb(45, 138, 52);
+}
+
+.about-col p {
+    padding-top: 15px 0 25px;
+}
+
+.blue-cta {
+    border: 2px solid rgb(46, 37, 170);
+    background: transparent;
+    color: rgb(59, 36, 147);
+    
+}
+
+/*-----Our services----*/
+
+/*-----TELECOMS SERVICES----*/
+
+.tel-header {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 25, 85, 0), rgba(6, 25, 85, 0)), url(img/teleban1.JPG);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.tel-header h1 {
+    color: #fff;
+}
+
+.tel-header p {
+    line-height: 1.6;
+}
+
+
+
+/*-----Our services----*/
+
+/*-----ENERGY SOLUTIONS----*/
+
+.ener-header {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(119, 135, 15, 0), rgba(128, 146, 10, 0)), url(img/ener1.JPG);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff; 
+}
+
+.ener-header h1 {
+    color: #fff;
+}
+
+.ener-header p {
+    line-height: 1.6;
+}
+
+
+/*-----Our services----*/
+
+/*-----AGRICULTURE SERVICES----*/
+
+.agric-header {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(28, 132, 50, 0), rgba(7, 81, 23, 0)), url(img/agr1.JPG);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff
+}
+.agric-header h1{
+    color: #fff;
+}
+
+.agric-header p {
+    line-height: 1.6;
+}
+
+
+/*-----News/Blog Section----*/
+
+/*-----Blog Page Content----*/
+
+.blog-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(149, 152, 150, 0), rgba(64, 65, 63, 0)), url(img/blog.JPG);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff
+}
+.blog-header h1 {
+    margin-top: 80px;
+    color: #fff;
+}
+
+.Blog-content {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.blog-left {
+    flex-basis: 65%;
+}
+
+.blog-left img {
+    width: 100%;
+}
+
+.blog-left h2 {
+    color: #343433;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.blog-left p {
+    color: #0c0c0c;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.blog-right {
+    flex-basis: 32%;
+}
+
+.blog-right h3 {
+    background: #eaf73c;
+    color: #131111;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align: center;
+}
+
+.blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.comment-box {
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-box h3 {
+    text-align: left;
+}
+
+.comment-form input, .comment-form textarea, .comment {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-form button {
+    margin: 10px 0;
+}
+
+@media(min-width:700PX) {
+    .blog-header h1 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*-----Contact Page----*/
+
+.contact-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(88, 124, 171, 0), rgba(47, 86, 164, 0)), url(img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff
+}
+
+.contact-header h1 {
+    margin-top: 80px;
+    color: #fff;
+}
+
+
+/*-----Contact Page----*/
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa-solid {
+    font-size: 28px;
+    color: #18395f;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} 
+
+
+
+/*-----portfolio Page----*/
+
+
+.portfolio-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(8, 38, 78, 0), rgba(47, 86, 164, 0)), url(img/portfolio.JPG);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #031721
+}
+
+.portfolio-content {
+    width: 85%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio-content P {
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+}
+.portfolio-header h1 {
+    margin-top: 80px;
+    color: #fff;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-info {
+    padding: 20px;
+}
+
+.portfolio-info h2 {
+    margin: 0 0 10px;
+    color: #466f8f;
+}
+
+.portfolio-info p {
+    margin: 5px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.portfolio-grid h1 {
+    margin-top: 80px;
+    color: #043961;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
